@@ -1,0 +1,40 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.link{
+    border: 2px solid #666666;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+form{
+    width: 500px;
+    margin: 20px auto;
+    border: 2px solid #666666;
+    padding: 40px;
+    text-align: center;
+
+}
+
+.hidden{
+    display: none;
+}
+
+.popUp {
+    position: fixed;
+    left: calc(50% - 400px);
+    width: 800px;
+    border: 2px solid #666666;
+    padding: 10px;
+    background-color: white;
+}
+
+.bigImg{
+    width: 100%;
+}
+
