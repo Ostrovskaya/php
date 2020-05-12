@@ -7,28 +7,19 @@
     <title>Gallery</title>
     <script defer>
         window.addEventListener('load', () =>{
-            let imgs = document.querySelectorAll(".img");
-            let popUp = document.querySelector('.popUp')
-
+            let imgs = document.querySelectorAll("img");
             imgs.forEach(img => {
                 img.addEventListener('click', evt => {
-                    let bigImg = popUp.querySelector('img');
-                    bigImg.src = evt.target.dataset.origin;
-                    bigImg.alt = evt.target.alt;
-                    popUp.classList.remove("hidden")
+                    setTimeout( ()=> {
+                        location.reload();
+                    }, 0);
                 })
-            })
-
-            popUp.addEventListener('click', evt => {
-                popUp.classList.add("hidden")
             })
         })
         
     </script>
 </head>
 <body>
-    <div class="popUp hidden">
-        <img class="bigImg" src="#" alt="#">
-    </div>
+
 
     
